@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Show the Local Weather</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+	  <div id="content-wrapper">
+	    <h1>Free Code Camp Zipline</h1>
+	    <h2>Local Weather App</h2>
+	     <div id="weather"><img id="w-icon"><span id="temp"></span><span id="temp-unit-format">С</span></div>
+	    <div>
+	      <span id="location" class="label label-info">Info</span>
+	      <span id="description" class="label label-info">Info</span>
+	      <span id="wind-wrapper" class="label label-info"><span id="wind-dir"></span><span id="wind-speed"></span><span id="wind-unit-format">M</span></span>
+	    </div>
+	    <div id="options">
+	    	<input type="button" id="metric" class="btn btn-primary active" value="C">
+	    	<input type="button" id="imperial" class="btn btn-primary" value="F">
+
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>
