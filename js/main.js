@@ -25,7 +25,8 @@ $(document).ready(function(){
       cityId = locationData.city.id;
       $.getJSON("http://api.openweathermap.org/data/2.5/weather?",{
         id: cityId,
-        units:unitsFormat
+        units: unitsFormat,
+        APPID: '7e8c332eb8db970b5518579cf4b1125d'
       })
         .done(function(weatherDate){
           $("#w-icon").attr("src", "http://openweathermap.org/img/w/"+weatherDate.weather[0].icon+".png");
